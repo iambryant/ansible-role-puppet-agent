@@ -1,9 +1,9 @@
 ---
 - name: "Include installation variables for {{ ansible_facts['os_family'] }}"
-  ansible.builtin.include_vars: "{{ ansible_facts['os_family'] }}-vars.yml"
+  ansible.builtin.include_tasks: "{{ ansible_facts['os_family'] | lower }}_vars.yml"
 
 - name: "Include installation tasks for {{ ansible_facts['os_family'] }}"
-  ansible.builtin.include_tasks: "{{ ansible_facts['os_family'] }}-tasks.yml"
+  ansible.builtin.include_tasks: "{{ ansible_facts['os_family'] | lower }}_tasks.yml"
 
 - name: "Ensure {{ puppet_agent_package }} {{ puppet_version }} is installed"
   ansible.builtin.package:
