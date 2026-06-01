@@ -52,4 +52,5 @@ None.
 MIT
 
 ## Acknowledgments
+
 This Ansible role was inspired by Jeff Geerling's https://github.com/geerlingguy/ansible-role-puppet. A huge thanks to him for helping me learn Ansible.
