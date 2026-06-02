@@ -10,6 +10,6 @@ galaxy_info:
     - puppet
 
 collections:
-  - name: community.general
+  - community.general
 
 dependencies: []
