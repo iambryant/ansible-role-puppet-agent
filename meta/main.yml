@@ -1,4 +1,5 @@
 galaxy_info:
+  role_name: puppet_agent
   author: lpars
   description: An Ansible role that installs Puppet or OpenVox agent on Linux.
 
