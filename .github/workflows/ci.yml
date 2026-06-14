@@ -12,10 +12,6 @@ on:
   schedule:
     - cron: "30 3 * * 5"
 
-defaults:
-  run:
-    working-directory: 'lpars.puppet_agent'
-
 jobs:
   lint:
     name: Lint
@@ -23,8 +19,6 @@ jobs:
     steps:
       - name: Check out the codebase.
         uses: actions/checkout@v6
-        with:
-          path: 'lpars.puppet_agent'
 
       - name: Set up Python 3.
         uses: actions/setup-python@v6
@@ -51,8 +45,6 @@ jobs:
     steps:
       - name: Check out the codebase.
         uses: actions/checkout@v6
-        with:
-          path: 'lpars.puppet_agent'
 
       - name: Set up Python 3.
         uses: actions/setup-python@v6
