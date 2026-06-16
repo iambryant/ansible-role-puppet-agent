@@ -2,6 +2,6 @@
 - name: Converge
   hosts: all
   tasks:
-    - name: "Include lpars.puppet_agent"
+    - name: "Include iambryant.puppet_agent"
       ansible.builtin.include_role:
-        name: "lpars.puppet_agent"
+        name: "iambryant.puppet_agent"

@@ -1,6 +1,6 @@
 # Ansible Role: Puppet Agent
 
-[![CI](https://github.com/LPARS/ansible-role-puppet-agent/actions/workflows/ci.yml/badge.svg)](https://github.com/LPARS/ansible-role-puppet-agent/actions/workflows/ci.yml)
+[![CI](https://github.com/iambryant/ansible-role-puppet-agent/actions/workflows/ci.yml/badge.svg)](https://github.com/iambryant/ansible-role-puppet-agent/actions/workflows/ci.yml)
 
 This role installs [Puppet](https://www.puppet.com) or [OpenVox](https://voxpupuli.org/openvox/) agent on Linux.
 
@@ -45,7 +45,7 @@ None.
       hosts: all
       become: true
       roles:
-        - lpars.puppet_agent
+        - iambryant.puppet_agent
 
 ## License
 
