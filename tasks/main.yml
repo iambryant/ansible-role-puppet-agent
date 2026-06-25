@@ -5,7 +5,7 @@
 - name: "Include installation tasks for {{ ansible_facts['os_family'] }}"
   ansible.builtin.include_tasks: "{{ ansible_facts['os_family'] }}.yml"
 
-- name: "Ensure {{ puppet_agent_package }} {{ puppet_version }} is installed"
+- name: "Ensure Puppet/OpenVox agent is installed"
   ansible.builtin.package:
     name: "{{ puppet_agent_package }}"
     state: present
@@ -17,4 +17,5 @@
     option: server
     value: "{{ puppet_agent_server_fqdn }}"
     state: present
-  notify: "Ensure {{ puppet_agent_service }} is started and enabled"
+    mode: '0644'
+  notify: "Ensure Puppet/OpenVox agent is started and enabled"

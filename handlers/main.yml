@@ -1,5 +1,5 @@
 ---
-- name: "Ensure {{ puppet_agent_service }} is started and enabled"
+- name: "Ensure Puppet/OpenVox agent is started and enabled"
   ansible.builtin.service:
     name: "{{ puppet_agent_service }}"
     state: "{{ puppet_agent_service_state }}"
