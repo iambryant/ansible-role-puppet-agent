@@ -1,5 +1,5 @@
 ---
-- name: "Ensure repository for {{ puppet_agent_package }} is installed"
+- name: "Ensure repository for Puppet/OpenVox agent is installed"
   ansible.builtin.dnf:
     name: "{{ puppet_release_rpm }}"
     state: present
