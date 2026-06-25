@@ -1,11 +1,11 @@
 ---
-- name: "Ensure repository for {{ puppet_agent_package }} is installed"
+- name: "Ensure repository for Puppet/OpenVox agent is installed"
   ansible.builtin.apt:
     deb: "{{ puppet_release_deb }}"
     state: present
   register: puppet_release_deb_install
 
-- name: "Update apt cache if necessary"
+- name: "Ensure apt cache is updated"
   ansible.builtin.apt:
     update_cache: true
   when: puppet_release_deb_install['changed']
