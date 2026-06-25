@@ -3,11 +3,8 @@ galaxy_info:
   role_name: puppet_agent
   author: iambryant
   description: An Ansible role that installs Puppet or OpenVox agent on Linux.
-
   license: license (MIT)
-
   min_ansible_version: 2.2
-
   galaxy_tags:
     - puppet
 
