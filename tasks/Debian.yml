@@ -5,7 +5,7 @@
     state: present
   register: puppet_release_deb_install
 
-- name: "Ensure apt cache is updated"
+- name: "Ensure apt cache is updated" # noqa: no-handler
   ansible.builtin.apt:
     update_cache: true
   when: puppet_release_deb_install['changed']
